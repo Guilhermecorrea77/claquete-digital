@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claquete Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="clapperboard" id="clapperboard">
+        <div class="clapper-header">
+            <div class="stripe"></div><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div>
+        </div>
+        <div class="clapper-body">
+            <div class="info-box main-title"><span id="display-prod-co">PRODUÇÃO</span></div>
+            <div class="info-box"><label>ROLL</label><span id="display-roll">001</span></div>
+            <div class="info-box"><label>SCENE</label><span id="display-scene">1A</span></div>
+            <div class="info-box"><label>TAKE</label><span id="display-take">1</span></div>
+            <div class="info-box director-box"><label>DIRECTOR</label><span id="display-director">NOME DIRETOR</span></div>
+            <div class="info-box camera-box"><label>CAMERA</label><span id="display-camera">A</span></div>
+            <div class="info-box date-box"><label>DATE</label><span id="display-date-day-month">DD/MM</span><span id="display-date-year">YYYY</span></div>
+            <div class="info-box day-night"><span id="display-int-ext">INT.</span><span id="display-day-night">DAY</span></div>
+            <div class="info-box sync-box"><label>SOUND</label><span id="display-sound">SYNC</span></div>
+        </div>
+    </div>
+
+    <div class="toggle-controls-container">
+        <button id="toggle-controls-button">Minimizar Controles</button>
+    </div>
+
+    <div class="controls" id="controls-panel">
+        <h2>Painel de Controle</h2>
+        <div class="form-grid">
+            <div class="input-group"><label for="prod-co">Produção:</label><input type="text" id="prod-co" placeholder="Nome da Produção"></div>
+            <div class="input-group"><label for="director">Diretor:</label><input type="text" id="director" placeholder="Nome do Diretor"></div>
+            <div class="input-group"><label for="roll">Roll:</label><input type="text" id="roll" value="001"></div>
+            <div class="input-group"><label for="scene">Cena:</label><input type="text" id="scene" value="1A"></div>
+            <div class="input-group"><label for="take">Take:</label><input type="number" id="take" value="1"></div>
+            <div class="input-group"><label for="camera">Câmera:</label><input type="text" id="camera" value="A" placeholder="A, B, C..."></div>
+            <div class="input-group"><label for="date">Data:</label><input type="date" id="date"></div>
+            <div class="input-group"><label for="int-ext">Ambiente:</label><input type="text" id="int-ext" value="INT." placeholder="INT. / EXT."></div>
+            <div class="input-group"><label for="day-night">Período:</label><input type="text" id="day-night" value="DAY" placeholder="DAY / NIGHT"></div>
+            <div class="input-group"><label for="sound">Som:</label><input type="text" id="sound" value="SYNC" placeholder="SYNC / MOS"></div>
+        </div>
+        
+        <hr>
+
+        <div class="log-controls">
+            <div class="input-group notes-group">
+                <label for="notes">Notas para o Editor (Opcional):</label>
+                <input type="text" id="notes" placeholder="Ex: Ótima atuação, usar este take.">
+            </div>
+            <button id="approve-button" class="log-button">Aprovar & Anotar Take</button>
+            <button id="download-log-button" class="log-button">Baixar Relatório (.txt)</button>
+        </div>
+        
+        <button id="clap-button">CLAP!</button>
+    </div>
+
+    <audio id="clap-sound" src="clap.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
