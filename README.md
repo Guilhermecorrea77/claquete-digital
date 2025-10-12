@@ -23,8 +23,6 @@ Esta aplicação vai além de uma simples exibição, oferecendo um conjunto de 
     * **Exportação em .txt:** Baixe um relatório completo e formatado de todos os takes aprovados, pronto para ser enviado à equipe de edição.
 * **Interface Limpa e Responsiva:** Design minimalista e funcional que se adapta a diferentes tamanhos de tela.
 
-## 🚀 Como Utilizar
-
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estrutura semântica e moderna.
